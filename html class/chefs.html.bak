@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  
+ </body>
+</html>
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  <center><img src="logo.png" width="100" height="100" border="0" alt="company logo"></center>
+  <center><a href="home.html">Home</a>&nbsp;<a href="gallery.html">Gallery</a>&nbsp;<a href="about.html">About</a>&nbsp;<a href="menu.html">Menu</a>&nbsp;<a href="chef.html">Chefs</a>&nbsp;<a href="reservation.html">reservation</a>&nbsp;<a href="blog.html">Blog</a>&nbsp;<a href="contact.html">Contact</a></center>
+<hr>
+<center><h2>Meet Our chefs:</h2></center>
+<center><div id="" class="">
+	<img src="chef.jpg" width="100" height="100" border="0" alt="chef image" style="border-radius:50%">
+</div></center>
+<center><div id="" class="">
+	<h3>Ajay yadav</h3>
+</div></center>
+<center><p><strong><u>Head Chef</u></strong></p></center>
+<center><div id="" class="">
+	<p>Sanjeev Kapoor is an Indian celebrity chef, television presenter, cookbook author and entrepreneur. He began his career in the hospitality industry in 1984 after completing the Diploma in Hotel Management from the Institute of Hotel Management Catering & Nutrition, Pusa, New Delhi</p>
+</div></center>
+<center><p>"Eat healty,Live Healty"</p></center>
+<center><p>for more detail:<br><a href="mailto:xyz@gmail.com">xyz@gmail.com</a></p></center>
+<br><br>
+<center><div id="" class="">
+	<img src="chef.jpg" width="100" height="100" border="0" alt="chef image" style="border-radius:50%">
+</div></center>
+<center><div id="" class="">
+	<h3>ram yadav</h3>
+</div></center>
+<center><p><strong><u>Head Chef</u></strong></p></center>
+<center><div id="" class="">
+	<p>Sanjeev Kapoor is an Indian celebrity chef, television presenter, cookbook author and entrepreneur. He began his career in the hospitality industry in 1984 after completing the Diploma in Hotel Management from the Institute of Hotel Management Catering & Nutrition, Pusa, New Delhi</p>
+</div></center>
+<center><p>"Eat healty,Live Healty"</p></center>
+<center><p>for more detail:<br><a href="mailto:xyz@gmail.com">xyz@gmail.com</a></p></center>
+<br><br>
+<center><div id="" class="">
+	<img src="chef.jpg" width="100" height="100" border="0" alt="chef image" style="border-radius:50%">
+</div></center>
+<center><div id="" class="">
+	<h3>raju yadav</h3>
+</div></center>
+<center><p><strong><u>cleaner</u></strong></p></center>
+<center><div id="" class="">
+	<p>Sanjeev Kapoor is an Indian celebrity chef, television presenter, cookbook author and entrepreneur. He began his career in the hospitality industry in 1984 after completing the Diploma in Hotel Management from the Institute of Hotel Management Catering & Nutrition, Pusa, New Delhi</p>
+</div></center>
+<center><p>"Eat healty,Live Healty"</p></center>
+<center><p>for more detail:<br><a href="mailto:xyz@gmail.com">xyz@gmail.com</a></p></center>
+<br><br>
+<center><div id="" class="">
+	<img src="chef.jpg" width="100" height="100" border="0" alt="chef image" style="border-radius:50%">
+</div></center>
+<center><div id="" class="">
+	<h3>jaya yadav</h3>
+</div></center>
+<center><p><strong><u>assistant Chef</u></strong></p></center>
+<center><div id="" class="">
+	<p>Sanjeev Kapoor is an Indian celebrity chef, television presenter, cookbook author and entrepreneur. He began his career in the hospitality industry in 1984 after completing the Diploma in Hotel Management from the Institute of Hotel Management Catering & Nutrition, Pusa, New Delhi</p>
+</div></center>
+<center><p>"Eat healty,Live Healty"</p></center>
+<center><p>for more detail:<br><a href="mailto:xyz@gmail.com">xyz@gmail.com</a></p></center>
+<br><br><center><div id="" class="">
+	<img src="chef.jpg" width="100" height="100" border="0" alt="chef image" style="border-radius:50%">
+</div></center>
+<center><div id="" class="">
+	<h3>Ajay yadav</h3>
+</div></center>
+<center><p><strong><u>Head Chef</u></strong></p></center>
+<center><div id="" class="">
+	<p>Sanjeev Kapoor is an Indian celebrity chef, television presenter, cookbook author and entrepreneur. He began his career in the hospitality industry in 1984 after completing the Diploma in Hotel Management from the Institute of Hotel Management Catering & Nutrition, Pusa, New Delhi</p>
+</div></center>
+<center><p>"Eat healty,Live Healty"</p></center>
+<center><p>for more detail:<br><a href="mailto:xyz@gmail.com">xyz@gmail.com</a></p></center>
+  <hr>
+  <center><strong>&copy;All Right Reserved by SResturant.</strong></center>
+ </body>
+</html>

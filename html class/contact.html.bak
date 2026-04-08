@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  <center><img src="logo.png" width="100" height="100" border="0" alt="company logo"></center>
+  <center><a href="home.html">Home</a>&nbsp;<a href="gallery.html">Gallery</a>&nbsp;<a href="about.html">About</a>&nbsp;<a href="menu.html">Menu</a>&nbsp;<a href="chef.html">Chefs</a>&nbsp;<a href="reservation.html">reservation</a>&nbsp;<a href="blog.html">Blog</a>&nbsp;<a href="contact.html">Contact</a></center>
+<hr>
+<center><h1>Contact US:</h1></center>
+<center><table border=1 cellpadding=5>
+<tr>
+	<td>address:</td>
+	<td>borivali</td>
+</tr>
+<tr>
+	<td>Phone:</td>
+	<td>9876543210</td>
+</tr>
+<tr>
+	<td>email:</td>
+	<td><a href="mailto:xyz@gmail.com">xyz@gmail.com</a></td>
+</tr>
+</table></center>
+<br>
+<center><strong>Opening time:</strong><br>
+<ul>
+	<li>monday to friday:8am </li>
+	<li>saturday & sunday:6pm</li>
+</ul></center>
+<center><iframe src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d15072.598205947888!2d72.8556455!3d19.1886693!3m2!1i1024!2i768!4f13.1!2m1!1srestaurant!5e0!3m2!1sen!2sin!4v1775533415120!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></center>
+<center><strong>query:</strong></center>
+<center><form method="post" action="">
+	<table>
+	<tr>
+		<td>Full Name:</td>
+		<td><input type="text" name="" required></td>
+	</tr>
+	<tr>
+		<td>Email:</td>
+		<td><input type="email" name="" required></td>
+	</tr>
+	<tr>
+		<td>message:</td>
+		<td><input type="textarea" name="" required></td>
+	</tr>
+	<tr>
+		<td colspan=2><center><input type="submit"></center></td>
+		
+	</tr>
+	</table>
+</form></center>
+  <hr>
+  <center><strong>&copy;All Right Reserved by SResturant.</strong></center>
+ </body>
+</html>
