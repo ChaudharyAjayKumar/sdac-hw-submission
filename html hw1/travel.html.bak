@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="Generator" content="EditPlus®" />
+    <meta name="Author" content="" />
+    <meta name="Keywords" content="" />
+    <meta name="Description" content="" />
+    <title>Travel</title>
+  </head>
+  <body>
+    <center>
+      <img src="logo.jpg" width="100" height="100" border="0" alt="logo" />
+    </center>
+    <center>
+      <a href="home.html">Home</a>&nbsp;&nbsp;<a href="destination.html">Destination</a>&nbsp;&nbsp;
+	  <a href="travel.html">Travel</a>&nbsp;&nbsp;<a href="tips.html">Travel Tips</a>&nbsp;&nbsp;
+	  <a href="Registration.html">Register</a>&nbsp;&nbsp;<a href="contact.html">Contact</a>&nbsp;&nbsp;
+    </center>
+	<hr>
+   <center><h2>"Travelled to country of Luffy"</h2></center>
+<p>Stepping into the world of One Piece felt like entering a dream shaped by adventure, freedom, and endless oceans. As I arrived in the “country of Luffy,” inspired by the fearless pirate Monkey D. Luffy, I could feel the spirit of exploration in every corner. The air itself carried a sense of excitement, as if every journey here promised a new story.</p><br>
+<p>The landscapes were nothing short of magical. Crystal-clear seas stretched endlessly, dotted with islands that looked like they were pulled straight from a fantasy map. Some islands were filled with dense jungles, while others had lively towns buzzing with music, food, and laughter. It reminded me of the Straw Hat Pirates sailing across the Grand Line, chasing dreams beyond the horizon.and Thus i can say <em><strong>"Travel expands the mind."</strong></em></p><br>
+<video src="video.mp4" height=300 width=900 controls alt="travel video"> 
+	<hr>
+	<center><strong>Copyright &copy; 2026. All Rights Reserved by STravel. </strong></center>
+  </body>
+</html>
