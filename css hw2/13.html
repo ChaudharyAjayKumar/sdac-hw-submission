@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        position: fixed;
+        background-color: red;
+        width: 100%;
+        height: 20px;
+      }
+      footer {
+        position: static;
+        height: 20px;
+        width: 100%;
+        background-color: blue;
+      }
+      .s2 {
+        padding-top: 30px;
+        margin-left: 20px;
+        background-color: aqua;
+        margin-right: 30px;
+        position: relative;
+        z-index: -1;
+      }
+
+      .s1 {
+        background-color: red;
+        position: absolute;
+        right: 0;
+        top: 25px;
+      }
+
+      .s3 {
+        position: sticky;
+        background-color: cadetblue;
+        width: 40px;
+        top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>fixed</header>
+    <main>
+      <div class="s2">
+        relative
+        <div class="s1">absolute</div>
+      </div>
+      <div class="s3">sticky</div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+        quisquam ad tempore explicabo necessitatibus et esse nisi atque!
+        Explicabo exercitationem repellendus, et ab at illo! Illum facilis velit
+        odit excepturi quas quod atque, aperiam explicabo aut nam, fuga unde!
+        Dolor fuga a commodi magni. Aperiam at consectetur laboriosam et sed
+        aliquid illum nobis neque doloremque repellat debitis distinctio ullam
+        quisquam libero commodi incidunt, ipsa deserunt qui perferendis
+        reprehenderit consequuntur? Aspernatur velit labore rerum? Earum
+        voluptatibus dolores aperiam excepturi libero labore nostrum dicta.
+        Magnam minus earum id at quia cum quisquam ab harum ipsam dolores!
+        Maxime dignissimos nam id est, ratione, nemo iusto aut amet, quia
+        tenetur maiores expedita nesciunt veritatis molestiae? Suscipit officiis
+        nobis voluptas distinctio officia hic cupiditate incidunt numquam.
+        Deserunt, aliquam assumenda consequatur corrupti ducimus ratione dolore
+        sint. Vero obcaecati saepe eveniet deserunt corrupti sit inventore
+        reprehenderit ea corporis repudiandae consequatur beatae facere, dolorem
+        explicabo in asperiores tempore hic cupiditate est expedita. Impedit,
+        fugit illum dolorem quisquam libero voluptatibus deleniti aliquam.
+        Veniam unde officiis omnis iste maiores repellendus ad reiciendis quae
+        suscipit magnam, vitae consectetur facilis eos sunt nobis dicta.
+        Excepturi, perspiciatis natus! Doloribus voluptates repudiandae magni
+        nemo et cum adipisci officia sapiente, ducimus veritatis provident
+        praesentium quasi, totam error atque tempora a ipsum modi voluptatum
+        iure deleniti minima sint. Iste eius odit provident necessitatibus minus
+        veniam placeat reprehenderit ad dicta possimus dolorem delectus facilis
+        porro, excepturi perferendis consequatur! Quas culpa maxime facere ab
+        illo exercitationem ullam libero, odio molestias, beatae nulla magni
+        explicabo eaque mollitia, provident ut vero excepturi. Autem quod fugit
+        rem quo nam quia voluptates laudantium molestiae, nostrum suscipit a.
+        Necessitatibus laboriosam molestias eaque earum facilis voluptatum
+        corrupti nesciunt distinctio, neque consequuntur a quis ullam sapiente
+        accusantium unde fugiat facere eum, pariatur, ea esse sed. Numquam
+        eligendi a assumenda cumque, perspiciatis perferendis asperiores hic
+        quod!
+      </p>
+    </main>
+    <footer>static</footer>
+  </body>
+</html>
