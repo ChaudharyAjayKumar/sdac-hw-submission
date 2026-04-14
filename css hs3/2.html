@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaQODE65duu_pA4bbUWlD1z_pabW5_GRaxhQ&s");
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 40vh;
+        margin-left: 40vw;
+        padding: 30px;
+        /* background-color: red; */
+        text-align: center;
+        text-transform: uppercase;
+        box-shadow:
+          8px 8px 32px rgb(81, 4, 4),
+          8px 8px 32px rgb(232, 198, 134),
+          8px 8px 32px rgba(225, 225, 99, 0.671);
+        border-radius: 10px;
+        max-width: 500px;
+      }
+
+      form label,
+      input {
+        margin-bottom: 8px;
+      }
+
+      input {
+        border-radius: 5px;
+        border-width: 4px;
+        border-color: red;
+        border-style: double;
+        background-color: rgba(0, 255, 255, 0.174);
+      }
+
+      button:hover {
+        background-color: green;
+        cursor: pointer;
+      }
+      button {
+        background-color: bisque;
+        border-radius: 10px;
+        color: red;
+        text-transform: uppercase;
+        font-weight: 900;
+        padding: 15px;
+      }
+
+      h1 {
+        text-transform: uppercase;
+        text-shadow:
+          2px 2px 2px red,
+          3px 3px 3px gold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h1>registration form</h1>
+      <form action="#">
+        <label for="">Full name:</label>
+        <input type="text" name="" id="" />
+        <br />
+        <label for="">Email:</label>
+        <input type="email" name="" id="" />
+        <br />
+        <label for="">Password:</label>
+        <input type="password" name="" id="" />
+        <br />
+        <label for="">Confirm password:</label>
+        <input type="password" name="" id="" />
+        <br />
+        <label for="">Age:</label>
+        <input type="number" name="" id="" />
+        <br />
+        <button type="submit">registration</button>
+      </form>
+    </div>
+  </body>
+</html>

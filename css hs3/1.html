@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background: linear-gradient(
+          40deg,
+          rgb(231, 78, 78),
+          rgb(101, 101, 220),
+          rgb(54, 228, 54),
+          pink,
+          orange
+        );
+        background-size: 4000px 200px;
+        animation: anime 2s ease infinite forwards;
+      }
+
+      @keyframes anime {
+        0%,
+        50% {
+          background-position: 0% 50%;
+        }
+
+        50%,
+        100% {
+          background-position: 50% 100%;
+        }
+      }
+      h1 {
+        margin-top: 20vh;
+        font-style: normal;
+        font-weight: 900;
+        font-size: xx-large;
+      }
+
+      thead {
+        text-decoration: underline solid;
+      }
+
+      th,
+      td {
+        padding: 10px;
+      }
+      table {
+        border-collapse: collapse;
+      }
+      .c1,
+      h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-collapse: collapse;
+        box-shadow: 8px 8px 32px black;
+        max-width: 600px;
+        border-radius: 10px;
+        margin-left: 35vw;
+      }
+      thead th::after {
+        content: "😎";
+      }
+      tbody td::after {
+        content: "❤️";
+      }
+      tbody tr:nth-child(odd) {
+        background-color: rgba(112, 112, 255, 0.344);
+      }
+      tbody td {
+        border-radius: 10px;
+      }
+
+      tbody td:hover {
+        font-family: cursive;
+        transition: transform 2s ease;
+        /* transform: rotateY(80deg); */
+        /* transform: perspective(12px) rotateY(360deg); */
+        /* transform: scale(2); */
+        transform: translate(20px,20px);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>STUDENT DETAILS</h1>
+    <div class="c1">
+      <table>
+        <thead>
+          <th>NAME</th>
+          <th>AGE</th>
+          <th>COURSE</th>
+          <th>GRADE</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>ajay</td>
+            <td>20</td>
+            <td>bsc.cs</td>
+            <td>a</td>
+          </tr>
+          <tr>
+            <td>vijay</td>
+            <td>20</td>
+            <td>bsc.cs</td>
+            <td>a</td>
+          </tr>
+          <tr>
+            <td>jay</td>
+            <td>20</td>
+            <td>bsc.cs</td>
+            <td>a</td>
+          </tr>
+          <tr>
+            <td>jaya</td>
+            <td>20</td>
+            <td>bsc.cs</td>
+            <td>a</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

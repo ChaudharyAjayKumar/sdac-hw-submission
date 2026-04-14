@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      .container {
+        width: 100%;
+        height: 100px;
+        padding: 20px;
+        background-color: gray;
+        width: 100%;
+        height: 400px;
+        margin: 20px;
+        display: flex;
+        flex-direction: row;
+      }
+      .container1 {
+        width: 100%;
+        height: 100px;
+        padding: 20px;
+        background-color: gray;
+        width: 100%;
+        height: 400px;
+        margin: 20px;
+        display: flex;
+        flex-direction: row-reverse;
+      }
+      .container2 {
+        width: 100%;
+        height: 100px;
+        padding: 20px;
+        background-color: gray;
+        width: 100%;
+        height: 400px;
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+      }
+      .container3 {
+        width: 100%;
+        height: 100px;
+        padding: 20px;
+        background-color: gray;
+        width: 100%;
+        height: 400px;
+        margin: 20px;
+        display: flex;
+        flex-direction: column-reverse;
+      }
+      .container5 {
+        width: 100%;
+        height: 100px;
+        padding: 20px;
+        background-color: gray;
+        width: 100%;
+        height: 400px;
+        margin: 20px;
+        display: flex;
+        /* flex-direction: row; */
+        flex-wrap: nowrap;
+      }
+      .container6 {
+        width: 100%;
+        height: 100px;
+        padding: 20px;
+        background-color: gray;
+        width: 100%;
+        height: 400px;
+        margin: 20px;
+        display: flex;
+        /* flex-direction: row; */
+        flex-wrap: wrap;
+      }
+
+      .j1 {
+        width: 100%;
+        height: 100px;
+        padding: 20px;
+        background-color: gray;
+        width: 100%;
+        height: 400px;
+        margin: 20px;
+        display: flex;
+        justify-content: flex-start;
+      }
+
+      .j2 {
+        width: 100%;
+        height: 100px;
+        padding: 20px;
+        background-color: gray;
+        width: 100%;
+        height: 400px;
+        margin: 20px;
+        display: flex;
+        justify-content: flex-end;
+      }
+      .j3 {
+        width: 100%;
+        height: 100px;
+        padding: 20px;
+        background-color: gray;
+        width: 100%;
+        height: 400px;
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+      }
+      .j4 {
+        width: 100%;
+        height: 100px;
+        padding: 20px;
+        background-color: gray;
+        width: 100%;
+        height: 400px;
+        margin: 20px;
+        display: flex;
+        justify-content: space-around;
+      }
+      .j5 {
+        width: 100%;
+        height: 100px;
+        padding: 20px;
+        background-color: gray;
+        width: 100%;
+        height: 400px;
+        margin: 20px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .j6 {
+        width: 100%;
+        height: 100px;
+        padding: 20px;
+        background-color: gray;
+        width: 100%;
+        height: 400px;
+        margin: 20px;
+        display: flex;
+        justify-content: space-evenly;
+      }
+
+      .a1 {
+        width: 100%;
+        height: 100px;
+        padding: 20px;
+        background-color: gray;
+        width: 100%;
+        height: 400px;
+        margin: 20px;
+        display: flex;
+        align-items: flex-start;
+      }
+      .a2 {
+        width: 100%;
+        height: 100px;
+        padding: 20px;
+        background-color: gray;
+        width: 100%;
+        height: 400px;
+        margin: 20px;
+        display: flex;
+        align-items: flex-end;
+      }
+      .a3 {
+        width: 100%;
+        height: 100px;
+        padding: 20px;
+        background-color: gray;
+        width: 100%;
+        height: 400px;
+        margin: 20px;
+        display: flex;
+        align-items: center;
+      }
+      .a4 {
+        width: 100%;
+        height: 100px;
+        padding: 20px;
+        background-color: gray;
+        width: 100%;
+        height: 400px;
+        margin: 20px;
+        display: flex;
+        align-items: stretch;
+      }
+      .grow {
+        width: 100%;
+        height: 100px;
+        padding: 20px;
+        background-color: gray;
+        width: 100%;
+        height: 400px;
+        margin: 20px;
+        display: flex;
+      }
+      .basis {
+        width: 100%;
+        height: 100px;
+        padding: 20px;
+        background-color: gray;
+        width: 100%;
+        height: 400px;
+        margin: 20px;
+        display: flex;
+      }
+
+      .b1 {
+        width: 30px;
+        /* height: 30px; */
+        margin: 30px;
+      }
+
+      .b {
+        width: 30px;
+        height: 30px;
+        margin: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>flex direction</h1>
+    <div class="container">
+      <div class="b" style="background-color: red"></div>
+      <div class="b" style="background-color: blue"></div>
+      <div class="b" style="background-color: green"></div>
+    </div>
+    <div class="container1">
+      <div class="b" style="background-color: red"></div>
+      <div class="b" style="background-color: blue"></div>
+      <div class="b" style="background-color: green"></div>
+    </div>
+    <div class="container2">
+      <div class="b" style="background-color: red"></div>
+      <div class="b" style="background-color: blue"></div>
+      <div class="b" style="background-color: green"></div>
+    </div>
+    <div class="container3">
+      <div class="b" style="background-color: red"></div>
+      <div class="b" style="background-color: blue"></div>
+      <div class="b" style="background-color: green"></div>
+    </div>
+    <h1>flex wrap</h1>
+    <div class="container5">
+      <div class="b" style="background-color: red"></div>
+      <div class="b" style="background-color: blue"></div>
+      <div class="b" style="background-color: green"></div>
+      <div class="b" style="background-color: red"></div>
+      <div class="b" style="background-color: blue"></div>
+      <div class="b" style="background-color: green"></div>
+      <div class="b" style="background-color: red"></div>
+      <div class="b" style="background-color: blue"></div>
+      <div class="b" style="background-color: green"></div>
+      <div class="b" style="background-color: red"></div>
+      <div class="b" style="background-color: blue"></div>
+      <div class="b" style="background-color: green"></div>
+      <div class="b" style="background-color: red"></div>
+      <div class="b" style="background-color: blue"></div>
+      <div class="b" style="background-color: green"></div>
+      <div class="b" style="background-color: red"></div>
+      <div class="b" style="background-color: blue"></div>
+      <div class="b" style="background-color: green"></div>
+      <div class="b" style="background-color: red"></div>
+      <div class="b" style="background-color: blue"></div>
+      <div class="b" style="background-color: green"></div>
+    </div>
+    <div class="container6">
+      <div class="b" style="background-color: red"></div>
+      <div class="b" style="background-color: blue"></div>
+      <div class="b" style="background-color: green"></div>
+      <div class="b" style="background-color: red"></div>
+      <div class="b" style="background-color: blue"></div>
+      <div class="b" style="background-color: green"></div>
+      <div class="b" style="background-color: red"></div>
+      <div class="b" style="background-color: blue"></div>
+      <div class="b" style="background-color: green"></div>
+      <div class="b" style="background-color: red"></div>
+      <div class="b" style="background-color: blue"></div>
+      <div class="b" style="background-color: green"></div>
+      <div class="b" style="background-color: red"></div>
+      <div class="b" style="background-color: blue"></div>
+      <div class="b" style="background-color: green"></div>
+      <div class="b" style="background-color: red"></div>
+      <div class="b" style="background-color: blue"></div>
+      <div class="b" style="background-color: green"></div>
+      <div class="b" style="background-color: red"></div>
+      <div class="b" style="background-color: blue"></div>
+      <div class="b" style="background-color: green"></div>
+    </div>
+    <h1>justify-content</h1>
+    <div class="j1">
+      <div class="b" style="background-color: red"></div>
+      <div class="b" style="background-color: blue"></div>
+      <div class="b" style="background-color: green"></div>
+    </div>
+    <div class="j2">
+      <div class="b" style="background-color: red"></div>
+      <div class="b" style="background-color: blue"></div>
+      <div class="b" style="background-color: green"></div>
+    </div>
+    <div class="j3">
+      <div class="b" style="background-color: red"></div>
+      <div class="b" style="background-color: blue"></div>
+      <div class="b" style="background-color: green"></div>
+    </div>
+    <div class="j4">
+      <div class="b" style="background-color: red"></div>
+      <div class="b" style="background-color: blue"></div>
+      <div class="b" style="background-color: green"></div>
+    </div>
+    <div class="j5">
+      <div class="b" style="background-color: red"></div>
+      <div class="b" style="background-color: blue"></div>
+      <div class="b" style="background-color: green"></div>
+    </div>
+    <div class="j6">
+      <div class="b" style="background-color: red"></div>
+      <div class="b" style="background-color: blue"></div>
+      <div class="b" style="background-color: green"></div>
+    </div>
+    <h1>align items</h1>
+    <div class="a1">
+      <div class="b" style="background-color: red"></div>
+      <div class="b" style="background-color: blue"></div>
+      <div class="b" style="background-color: green"></div>
+    </div>
+    <div class="a2">
+      <div class="b" style="background-color: red"></div>
+      <div class="b" style="background-color: blue"></div>
+      <div class="b" style="background-color: green"></div>
+    </div>
+    <div class="a3">
+      <div class="b" style="background-color: red"></div>
+      <div class="b" style="background-color: blue"></div>
+      <div class="b" style="background-color: green"></div>
+    </div>
+    <div class="a4">
+      <div class="b1" style="background-color: red"></div>
+      <div class="b1" style="background-color: blue"></div>
+      <div class="b1" style="background-color: green"></div>
+    </div>
+    <h1>flex grow</h1>
+    <div class="grow">
+      <div class="b" style="background-color: red; flex-grow: 1"></div>
+      <div class="b" style="background-color: blue"></div>
+      <div class="b" style="background-color: green"></div>
+    </div>
+    <h1>flex basis</h1>
+    <div class="basis">
+      <div
+        class="b"
+        style="background-color: red; flex-basis: 200px; flex-grow: 1"
+      ></div>
+      <!-- flex basis is like height and width of flex grow and flex shrink -->
+      <div class="b" style="background-color: blue"></div>
+      <div class="b" style="background-color: green"></div>
+    </div>
+  </body>
+</html>

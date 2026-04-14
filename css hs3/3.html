@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .main {
+        font-size: 16px;
+      }
+
+      /* @media (max-width:768px ){
+            .main{
+                font-size: 20px;
+            }
+        }
+
+        @media( min-width:480px){
+            .main{
+                font-size: 12px;
+            }
+        } */
+
+      .i1,
+      .i2 {
+        height: 40px;
+        width: 40px;
+        margin: 10px;
+      }
+
+      .m2 {
+        max-height: 200px;
+        background-color: grey;
+        padding: 5px;
+      }
+      @media (max-height: 600px) {
+        .i1 {
+          height: 40px;
+          width: 40px;
+        }
+        .i2 {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="main">hi,i am learning css</div>
+
+    <div class="m2">
+      <div class="i1" style="background-color: red"></div>
+      <div class="i2" style="background-color: green"></div>
+    </div>
+  </body>
+</html>
