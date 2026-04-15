@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS v5.3.8 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark bg-black">
+        <div class="container">
+          <img
+            src="data:image/jpeg;base64,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"
+            class="img-fluid rounded-circle"
+            alt="logo"
+            height="40px"
+            width="40px"
+          />
+
+          <button
+            class="navbar-toggler d-lg-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="home.html" aria-current="page"
+                  >Home <span class="visually-hidden">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="product.html">product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pdetail.html">product detail</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">abouts us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">contact us</a>
+              </li>
+            </ul>
+            <form class="d-flex my-2 my-lg-0" action="registration.html">
+              <button
+                class="btn btn-outline-success my-2 my-sm-0"
+                type="submit"
+              >
+                Register
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h2 class="text-center py-4">our products</h2>
+      <div class="container ">
+        <div class="row justify-content-center align-items-center g-2">
+          <div class="col py-4">
+            <div class="card text-center">
+              <img
+                class="card-img-top"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFRQZCj_ksZfwfMWfH4HRpygedCgcAbxF5RA&s"
+                alt="Title"
+              />
+              <div class="card-body">
+                <a
+                  name=""
+                  id=""
+                  class="btn btn-primary"
+                  href="pdetail.html"
+                  role="button"
+                  >Buy now</a
+                >
+              </div>
+            </div>
+          </div>
+           <div class="col">
+            <div class="card text-center">
+              <img
+                class="card-img-top"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFRQZCj_ksZfwfMWfH4HRpygedCgcAbxF5RA&s"
+                alt="Title"
+              />
+              <div class="card-body">
+                <a
+                  name=""
+                  id=""
+                  class="btn btn-primary"
+                  href="pdetail.html"
+                  role="button"
+                  >Buy now</a
+                >
+              </div>
+            </div>
+          </div>
+           <div class="col">
+            <div class="card text-center">
+              <img
+                class="card-img-top"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFRQZCj_ksZfwfMWfH4HRpygedCgcAbxF5RA&s"
+                alt="Title"
+              />
+              <div class="card-body">
+                <a
+                  name=""
+                  id=""
+                  class="btn btn-primary"
+                  href="pdetail.html"
+                  role="button"
+                  >Buy now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row justify-content-center align-items-center g-2">
+          <div class="col py-4">
+            <div class="card text-center">
+              <img
+                class="card-img-top"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFRQZCj_ksZfwfMWfH4HRpygedCgcAbxF5RA&s"
+                alt="Title"
+              />
+              <div class="card-body">
+                <a
+                  name=""
+                  id=""
+                  class="btn btn-primary"
+                  href="pdetail.html"
+                  role="button"
+                  >Buy now</a
+                >
+              </div>
+            </div>
+          </div>
+           <div class="col">
+            <div class="card text-center">
+              <img
+                class="card-img-top"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFRQZCj_ksZfwfMWfH4HRpygedCgcAbxF5RA&s"
+                alt="Title"
+              />
+              <div class="card-body">
+                <a
+                  name=""
+                  id=""
+                  class="btn btn-primary"
+                  href="pdetail.html"
+                  role="button"
+                  >Buy now</a
+                >
+              </div>
+            </div>
+          </div>
+           <div class="col">
+            <div class="card text-center">
+              <img
+                class="card-img-top"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFRQZCj_ksZfwfMWfH4HRpygedCgcAbxF5RA&s"
+                alt="Title"
+              />
+              <div class="card-body">
+                <a
+                  name=""
+                  id=""
+                  class="btn btn-primary"
+                  href="pdetail.html"
+                  role="button"
+                  >Buy now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row justify-content-center align-items-center g-2">
+          <div class="col py-4">
+            <div class="card text-center">
+              <img
+                class="card-img-top"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFRQZCj_ksZfwfMWfH4HRpygedCgcAbxF5RA&s"
+                alt="Title"
+              />
+              <div class="card-body">
+                <a
+                  name=""
+                  id=""
+                  class="btn btn-primary"
+                  href="pdetail.html"
+                  role="button"
+                  >Buy now</a
+                >
+              </div>
+            </div>
+          </div>
+           <div class="col">
+            <div class="card text-center">
+              <img
+                class="card-img-top"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFRQZCj_ksZfwfMWfH4HRpygedCgcAbxF5RA&s"
+                alt="Title"
+              />
+              <div class="card-body">
+                <a
+                  name=""
+                  id=""
+                  class="btn btn-primary"
+                  href="pdetail.html"
+                  role="button"
+                  >Buy now</a
+                >
+              </div>
+            </div>
+          </div>
+           <div class="col">
+            <div class="card text-center">
+              <img
+                class="card-img-top"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFRQZCj_ksZfwfMWfH4HRpygedCgcAbxF5RA&s"
+                alt="Title"
+              />
+              <div class="card-body">
+                <a
+                  name=""
+                  id=""
+                  class="btn btn-primary"
+                  href="pdetail.html"
+                  role="button"
+                  >Buy now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-black text-secondary text-center py-4">
+      <div class="container-fluid bg-white pt-3 pb-1">
+        <nav aria-label="Page navigation">
+          <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li class="page-item active" aria-current="page">
+              <a class="page-link" href="home.html">1</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="product.html">2</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="pdetail.html">3</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="about.html">4</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="contact.html">5</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      © 2026 Online store .All rights reserved.
+    </footer>
+    <!-- Bootstrap JavaScript Bundle (includes Popper) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
