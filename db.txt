@@ -1,0 +1,319 @@
+create database sdac;
+use sdac;
+
+
+
+create table emp(eid number,fname varchar(20),lname varchar(20),dept varchar(20),sal int,age number);
+
+alter table emp add address varchar(255);
+
+alter table emp modify sal decimal(10,2);
+
+insert all
+into emp values(1,'ajay','cha','it',200,20)
+into emp values(2,'ajay','cha','it',200,20)
+into emp values(3,'ajay','cha','it',200,20)
+into emp values(4,'ajay','cha','it',200,20)
+into emp values(5,'ajay','cha','it',200,20)
+select * from dual;
+
+
+update emp set sal=2000 where eid=123;
+
+delete from emp where eid=456;
+
+select * from emp;
+
+select fname,lname from emp where dept='sales';
+
+select sal from emp;
+
+select fname,lname,age from emp;
+
+select concat(fname,concat('',lname)) as full_name,sal from emp;
+
+alter table emp rename column address  to add;
+
+alter table emp drop column add;
+
+delete from emp;
+truncate table emp;
+
+
+
+
+
+
+create table emp(eid int primary key,fname varchar(20),lname varchar(20),dept int ,sal decimal(10,2) );
+
+create table dept (did int primary key ,dname varchar(20));
+
+alter table emp add constraint df_key   foreign key (dept) references  dept(did) ;
+
+insert into emp values(1,'ajay','ram',1,200);
+
+insert all
+into dept values (1,'sal')
+into dept values (2,'sal')
+into dept values (3,'sal')
+select * from dual;
+
+
+--first above(dept)
+
+insert all 
+into emp values(1,'ajay','ram',1,200)
+into emp values(2,'ajay','ram',2,200)
+into emp values(3,'ajay','ram',1,200)
+into emp values(4,'ajay','ram',3,200)
+select * from dual;
+
+
+update emp set sal=6000 where eid=1;
+
+delete from emp where dept=1;
+delete from dept where did=1;
+
+select fname ,lname form emp;
+
+select count(*) as total_emp,avg(sal) as avg_sal,min(sal) as min_sal,max(sal) as max_sal from emp;
+
+select upper(fname),upper(lname) from emp;
+
+select concat(fname,concat(' ',lname)) from emp;
+select (fname || ' ' || lname) as full_name from emp;
+ 
+select * from emp order by sal desc fetch first 5 rows only;
+
+select dept,sum(sal) from emp group by dept ;
+
+select dept from emp group by dept order by avg(sal) desc fetch first 1 rows only;
+
+select dept from emp group by dept having (count(*) >10);
+
+select max(sal) as max_sal ,min(sal) as min_sal from emp group by dept;
+
+select * from emp order by lname  ;
+
+select dept from emp group by dept having(avg(sal) > 60000);
+
+select * from emp order by sal desc;
+
+
+
+
+
+
+
+
+
+
+select e.*,d.dname from emp e inner join dept d on e.dept=d.did
+select d.dname,e.* from dept d left join emp e on d.did=e.dept;
+select e.*,d.dname from emp e right join dept d on e.dept=d.did;
+select e.*,d.dname from emp e full join dept d on e.dept=d.did;
+
+
+-- for self join 
+create table emp1(eid int ,name varchar(20),mid int);
+
+select e.name,m.name from emp1 e inner join emp1 m on e.mid=m.eid;
+-- last line
+
+
+-- extra for cross join 
+select  * from emp cross join dept;
+
+
+
+create or replace procedure add_emp(eid1 in number,name1 in varchar(20))
+as
+begin 
+    insert into emp(eid,fname) values(eid1,name1);
+   
+end;
+
+begin
+   add_emp(1,'ram');
+   add_emp(2,'raju');
+end;
+
+
+create or replace procedure update_emp(eid1 in number,name1 in  varchar(20),dept1 in varchar(20))
+as
+begin 
+    update emp set name=name1,dept=dept1 where eid=eid1;
+   
+end;
+
+begin
+   update_emp(1,'ram','it');
+end;
+
+
+
+create or replace procedure delete_emp(eid1 in number)
+as
+begin 
+    delete from emp  where eid=eid1;
+   
+end;
+
+begin
+   delete_emp(1);
+end;
+
+
+-- extra for show employee
+create or replace procedure show_emp
+as
+begin 
+    select * from emp
+   
+end;
+
+begin
+   show_emp();
+end;
+
+
+
+select * from emp where dept = (select did from dept where dname='sales');
+
+select sum(sal) from emp where dept = (select did from dept where dname='hr );
+
+select * from emp where sal=(select max(sal) from emp );
+
+
+
+create table emp2(id int,name varchar(20),dept varchar(20));
+create table emp3(id int,name varchar(20),dept varchar(20));
+create table emp4(id int,name varchar(20),dept varchar(20));
+create table emp5(id int,osal number,nsal number ,utime timestamp);
+
+
+create or replace trigger backupemp
+after insert on emp
+for each row
+begin
+   insert into emp2 values(:new.eid,:new.fname,:new.dept);
+end;
+
+
+create or replace trigger updatebackupemp
+before update on emp
+for each row
+begin
+   insert into emp3 values(:old.emp.eid,:old.emp.fname,:old.emp.dept);
+end;
+
+
+create or replace trigger deletebackupemp
+before delete on emp
+for each row
+begin
+   insert into emp4 values(:old.emp.eid,:old.emp.fname,:old.emp.dept);
+end;
+
+
+create or replace trigger monitorhighsal
+after update on emp
+for each row
+begin
+  if :new.sal > 100000 then
+      insert into emp5 values(:new.eid,:old.sal,:new.sal,cuurent_timestamp);
+  end if;
+end;
+
+
+update emp set sal=2000000 where eid=2;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+create or replace view emp_sal_view
+as
+select eid,fname,sal from emp;
+
+select * from emp_sal_view;
+
+
+
+create or replace view high_sal_emp
+as
+select * from emp where sal >60000;
+
+create or replace view emp_dept_view
+as
+select e.eid,e.fname,d.dname from emp e inner join dept d on e.dept=d.did;
+
+
+
+create or replace function get_avg_sal(did number)
+return number 
+is 
+avg_sal number;
+begin
+   select avg(sal) into avg_sal from emp where dept=did;
+   return avg_sal;
+end;
+
+
+ select get_avg_sal(2) from dual;
+
+
+
+create or replace function get_high_sal
+return number 
+is 
+high_sal number;
+begin
+   select  max(sal) into  high_sal from emp ;
+   return  high_sal;
+end;
+
+ select get_high_sal(2) from dual;
+
+
+
+
+create or replace function check_sal_level(eid1 number)
+return varchar(255) 
+is 
+sal1 number;
+begin
+    select sal as sal1 from emp where eid=eid1;
+   if  sal1 >=60000  then
+       return 'high sal';
+    else
+    return 'normal sal';
+   end if;
+end;
+
+
+ select check_sal_level(1) from dual;
+
+
+
+
+
+
+
+
+
+
+
